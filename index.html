@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./src/output.css" rel="stylesheet">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- font awosome -->
+</head>
+
+<body class="font-roboto">
+    <!-- heading -->
+    <header class="font-roboto px-[112px] bg-primary flex justify-between h-10 items-center">
+        <!-- left section -->
+        <div>
+            <span class="text-xs text-white mr-2">
+                <i class="fa-solid fa-phone mr-1"></i>
+                +00 1234 567</span>
+            <span class="text-xs text-white mr-2">
+                <i class="fa-solid fa-paper-plane mr-1"></i>
+                youremail@gmail.com
+            </span>
+        </div>
+        <!-- icon section -->
+        <div class="text-white flex items-center">
+            <a class="h-10 block w-10" href=""><i class="fa-brands fa-facebook-f "></i></a>
+            <a class="h-10 block w-10" href=""><i class="fa-brands fa-twitter "></i></a>
+            <a class="h-10 block w-10" href=""><i class="fa-brands fa-instagram "></i></a>
+            <a class="h-10 block w-10" href=""><i class="fa-brands fa-dribbble "></i></a>
+        </div>
+    </header>
+
+    <!-- navbar -->
+    <nav class="flex font-roboto px-[105px] items-center justify-between">
+        <!-- logo -->
+        <h3 class="font-bold text-[20px]">Counselor</h3>
+        <!-- links -->
+        <ul class="flex items-center text-[15px]">
+            <li class="px-5 font-semibold py-[14px]"><a href="">Home</a></li>
+            <li class="px-5 font-semibold py-[14px]"><a href="">About</a></li>
+            <li class="px-5 font-semibold py-[14px]"><a href="">Counselor</a></li>
+            <li class="px-5 font-semibold py-[14px]"><a href="">Services</a></li>
+            <li class="px-5 font-semibold py-[14px]"><a href="">Pricing</a></li>
+            <li class="px-5 font-semibold py-[14px]"><a href="">Blog</a></li>
+            <li class="px-5 font-semibold py-[14px]"><a href="">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- hero section -->
+    <section
+        style="background-image: url('img/banner.webp'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;"
+        class="relative font-roboto h-screen flex items-center justify-center">
+        <!-- left section -->
+        <div class="flex flex-col gap-6">
+            <h1 class="text-6xl font-bold">Counseling For Your Better Life</h1>
+            <p class="text-text text-lg">A small river named Duden flows by their place and supplies it with the
+                necessary
+                regelialia.</p>
+            <div>
+                <button class="font-normal text-[15px] px-6 py-4 rounded-[3px] bg-primary text-white">Contect
+                    More</button>
+                <button class="font-normal text-[15px] px-6 py-4 rounded-[3px] bg-white text-black">Read More</button>
+            </div>
+        </div>
+        <!-- right side  -->
+        <div class="h-20 w-20 rounded-full bg-white text-primary flex items-center justify-center">
+            <i class="fa-solid fa-play text-2xl"></i>
+        </div>
+    </section>
+
+    <!-- card section -->
+    <section
+        class="px-[105px] flex relative before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-[105px] before:bg-[#4a7e5b]">
+        <!-- card 1 -->
+        <div class="flex p-[30px] bg-[#589167] relative ">
+            <i class="fa-solid mr-5 text-[60px] text-white fa-house"></i>
+            <div>
+                <h3 class="text-2xl font-medium mb-2 text-white">
+                    100% Confidential
+                </h3>
+                <p class="text-[17px] text-whiteText">A small river named Duden flows by their place and supplies it
+                    with the necessary regelialia.
+                </p>
+            </div>
+        </div>
+        <!-- card 2 -->
+        <div class="flex p-[30px] bg-[#528760]">
+            <i class="fa-solid mr-5 text-[60px] text-white fa-house"></i>
+            <div>
+                <h3 class="text-2xl font-medium mb-2 text-white">
+                    Qualified Team
+                </h3>
+                <p class="text-[17px] text-whiteText">A small river named Duden flows by their place and supplies it
+                    with the necessary regelialia.
+                </p>
+            </div>
+        </div>
+        <!-- card 3 -->
+        <div class="flex bg-[#4e815c] p-[30px]">
+            <!-- <img src="img/icon/umbrella.png" alt=""> -->
+            <i class="fa-solid mr-5 text-[60px] text-white fa-house"></i>
+            <div>
+                <h3 class="text-2xl font-medium mb-2 text-white">
+                    Individual Approach
+                </h3>
+                <p class="text-[17px] text-whiteText">A small river named Duden flows by their place and supplies it
+                    with the necessary regelialia.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- service section -->
+    <section class="py-[100px]">
+        <div class="container max-w-[1140px] mx-auto">
+            <!-- heading text -->
+            <div class="font-semibold text-center pb-5">
+                <h6 class="text-primary tracking-[2px] text-xs">SERVICES</h6>
+                <h1 class="text-heading  text-[40px]">How It Works</h1>
+            </div>
+            <!-- cards -->
+            <div class="flex items-center">
+                <!-- card1 -->
+                <div
+                    class="group flex relative flex-col px-4 items-center justify-center text-white transition-colors duration-300">
+                    <div
+                        class="w-[170px] h-[170px] mb-[10px] rounded-full bg-[#808080] group-hover:bg-primary flex items-center justify-center transition-colors duration-300 relative">
+                        <i class="fa-solid mr-5 text-[60px] fa-house"></i>
+                        <!-- Centered Absolute Div -->
+                        <div
+                            class="absolute top-1/2 left-[65%] group-hover:left-[60%] group-hover:bg-white transform -translate-x-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-primary transition-all duration-300">
+                        </div>
+                    </div>
+                    <div
+                        class="absolute bg-primary group-hover:bg-white group-hover:text-primary top-0 right-[30%] border-[5px] border-white text-white w-[50px] h-[50px] rounded-full flex items-center justify-center transition-colors duration-300 text-lg font-medium">
+                        01</div>
+                    <div class="text-center">
+                        <h1 class="text-2xl mb-2 text-heading font-medium">Make Schedule</h1>
+                        <p class="text-lg text-[#808080]">A small river named Duden flows by their place and supplies it
+                            with the necessary regelialia.</p>
+                    </div>
+                </div>
+                <!-- card2 -->
+                <div
+                    class="group flex relative flex-col px-4 items-center justify-center text-white transition-colors duration-300">
+                    <div
+                        class="w-[170px] h-[170px] mb-[10px] rounded-full bg-[#808080] group-hover:bg-primary flex items-center justify-center transition-colors duration-300 relative">
+                        <i class="fa-solid mr-5 text-[60px] fa-house"></i>
+                        <!-- Centered Absolute Div -->
+                        <div
+                            class="absolute top-1/2 left-[65%] group-hover:left-[60%] group-hover:bg-white transform -translate-x-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-primary transition-all duration-300">
+                        </div>
+                    </div>
+                    <div
+                        class="absolute bg-primary group-hover:bg-white group-hover:text-primary top-0 right-[30%] border-[5px] border-white text-white w-[50px] h-[50px] rounded-full flex items-center justify-center transition-colors duration-300 text-lg font-medium">
+                        02</div>
+                    <div class="text-center">
+                        <h1 class="text-2xl mb-2 text-heading font-medium">Make Schedule</h1>
+                        <p class="text-lg text-[#808080]">A small river named Duden flows by their place and supplies it
+                            with the necessary regelialia.</p>
+                    </div>
+                </div>
+                <!-- card3 -->
+                <div
+                    class="group flex relative flex-col px-4 items-center justify-center text-white transition-colors duration-300">
+                    <div
+                        class="w-[170px] h-[170px] mb-[10px] rounded-full bg-[#808080] group-hover:bg-primary flex items-center justify-center transition-colors duration-300 relative">
+                        <i class="fa-solid mr-5 text-[60px] fa-house"></i>
+                        <!-- Centered Absolute Div -->
+                        <div
+                            class="absolute top-1/2 left-[65%] group-hover:left-[60%] group-hover:bg-white transform -translate-x-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-primary transition-all duration-300">
+                        </div>
+                    </div>
+                    <div
+                        class="absolute bg-primary group-hover:bg-white group-hover:text-primary top-0 right-[30%] border-[5px] border-white text-white w-[50px] h-[50px] rounded-full flex items-center justify-center transition-colors duration-300 text-lg font-medium">
+                        03</div>
+                    <div class="text-center">
+                        <h1 class="text-2xl mb-2 text-heading font-medium">Make Schedule</h1>
+                        <p class="text-lg text-[#808080]">A small river named Duden flows by their place and supplies it
+                            with the necessary regelialia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3rd section -->
+    <section class="container max-w-[1140px] mx-auto">
+        <div class="flex flex-col lg:flex-row">
+            <!-- left img -->
+            <div class="w-1/2">
+                <img src="img/about-1.jpg.webp" alt="">
+            </div>
+            <!-- right text content -->
+            <div class="w-1/2 bg-[#f5f4f0] p-12">
+                <h6 class="text-primary uppercase tracking-[2px] text-xs font-semibold">Welcome to Counselor</h6>
+                <h1 class="text-[40px] mb-6 font-semibold text-heading">Best Counseling Funding Network Worldwide.</h1>
+                <p class="text-base leading-7 text-[#808080] pb-4">A small river named Duden flows by their place and supplies it
+                    with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences
+                    fly into your mouth.</p>
+                <p class="text-base leading-7 text-[#808080] pb-4">On her way she met a copy. The copy warned the Little Blind
+                    Text, that where it came from it would have been rewritten a thousand times and everything that was
+                    left from its origin would be the word "and" and the Little Blind Text should turn around and return
+                    to its own, safe country.</p>
+                <button class="flex gap-[10px] mt-6 text-sm">
+                    <div class="border w-10 h-[30px] rounded-md border-primary text-primary flex items-center justify-center">
+                        <i class="fa-solid fa-play "></i>
+                    </div>
+                    Watch Our Consultant Video
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="h-screen bg-slate-300"></section>
+
+    <!-- font awosome -->
+    <script src="https://kit.fontawesome.com/2dfedb0ed0.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
