@@ -2,9 +2,21 @@
 module.exports = {
   content: ["./*.{html,js}"],
   theme: {
+    container: {
+      center: true,
+      padding: '16px',
+      screens: {
+        'lg': '1366px',
+      },
+    },
     extend: {
       fontFamily:{
         roboto: ["Roboto", "sans-serif"]
+      },
+      screens:{
+        sm:"320px",
+        md:"768px",
+        lg:"1200px",
       },
       // #ffffffcc
       colors:{

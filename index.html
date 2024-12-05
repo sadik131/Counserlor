@@ -18,32 +18,35 @@
 
 <body class="font-roboto">
     <!-- heading -->
-    <header class="font-roboto px-[112px] bg-primary flex justify-between h-10 items-center">
-        <!-- left section -->
-        <div>
-            <span class="text-xs text-white mr-2">
-                <i class="fa-solid fa-phone mr-1"></i>
-                +00 1234 567</span>
-            <span class="text-xs text-white mr-2">
-                <i class="fa-solid fa-paper-plane mr-1"></i>
-                youremail@gmail.com
-            </span>
+    <header class="font-roboto bg-primary">
+        <div class="container mx-auto max-w-[1140px] flex flex-col lg:flex-row justify-between lg:items-center">
+            <!-- left section -->
+            <div>
+                <span class="text-xs text-white mr-2">
+                    <i class="fa-solid fa-phone mr-1"></i>
+                    +00 1234 567</span>
+                <span class="text-xs text-white mr-2">
+                    <i class="fa-solid fa-paper-plane mr-1"></i>
+                    youremail@gmail.com
+                </span>
+            </div>
+            <!-- icon section -->
+            <div class="text-white flex items-center">
+                <a class="h-10 block w-10" href=""><i class="fa-brands fa-facebook-f "></i></a>
+                <a class="h-10 block w-10" href=""><i class="fa-brands fa-twitter "></i></a>
+                <a class="h-10 block w-10" href=""><i class="fa-brands fa-instagram "></i></a>
+                <a class="h-10 block w-10" href=""><i class="fa-brands fa-dribbble "></i></a>
+            </div>
         </div>
-        <!-- icon section -->
-        <div class="text-white flex items-center">
-            <a class="h-10 block w-10" href=""><i class="fa-brands fa-facebook-f "></i></a>
-            <a class="h-10 block w-10" href=""><i class="fa-brands fa-twitter "></i></a>
-            <a class="h-10 block w-10" href=""><i class="fa-brands fa-instagram "></i></a>
-            <a class="h-10 block w-10" href=""><i class="fa-brands fa-dribbble "></i></a>
-        </div>
+
     </header>
 
     <!-- navbar -->
-    <nav class="flex font-roboto px-[105px] items-center justify-between">
+    <nav class="flex font-roboto container mx-auto max-w-[1140px] py-[10px] items-center justify-between">
         <!-- logo -->
         <h3 class="font-bold text-[20px]">Counselor</h3>
         <!-- links -->
-        <ul class="flex items-center text-[15px]">
+        <ul class="hidden lg:flex items-center text-[15px]">
             <li class="px-5 font-semibold py-[14px]"><a href="">Home</a></li>
             <li class="px-5 font-semibold py-[14px]"><a href="">About</a></li>
             <li class="px-5 font-semibold py-[14px]"><a href="">Counselor</a></li>
@@ -57,28 +60,32 @@
     <!-- hero section -->
     <section
         style="background-image: url('img/banner.webp'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;"
-        class="relative font-roboto h-screen flex items-center justify-center">
-        <!-- left section -->
-        <div class="flex flex-col gap-6">
-            <h1 class="text-6xl font-bold">Counseling For Your Better Life</h1>
-            <p class="text-text text-lg">A small river named Duden flows by their place and supplies it with the
-                necessary
-                regelialia.</p>
-            <div>
-                <button class="font-normal text-[15px] px-6 py-4 rounded-[3px] bg-primary text-white">Contect
-                    More</button>
-                <button class="font-normal text-[15px] px-6 py-4 rounded-[3px] bg-white text-black">Read More</button>
+        class="relative font-roboto ">
+        <div
+            class="container mx-auto max-w-[1140px] flex flex-col lg:flex-row items-center justify-center lg:justify-between h-screen">
+            <!-- left section -->
+            <div class="flex flex-col w-full lg:w-1/2 gap-6">
+                <h1 class="text-6xl font-bold">Counseling For Your Better Life</h1>
+                <p class="text-text text-lg">A small river named Duden flows by their place and supplies it with the
+                    necessary
+                    regelialia.</p>
+                <div>
+                    <button class="text-[15px] font-medium px-6 py-4 rounded-[3px] bg-primary text-white">Contect
+                        More</button>
+                    <button class="text-[15px] font-medium px-6 py-4 rounded-[3px] bg-white text-black">Read
+                        More</button>
+                </div>
             </div>
-        </div>
-        <!-- right side  -->
-        <div class="h-20 w-20 rounded-full bg-white text-primary flex items-center justify-center">
-            <i class="fa-solid fa-play text-2xl"></i>
-        </div>
+            <!-- right side  -->
+            <div class="w-full lg:w-1/2 flex lg:justify-end">
+                <span class="h-20 w-20 rounded-full bg-white text-primary flex items-center justify-center"><i
+                        class="fa-solid fa-play text-2xl"></i></span>
+            </div>
     </section>
 
     <!-- card section -->
-    <section
-        class="px-[105px] flex relative before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-[105px] before:bg-[#4a7e5b]">
+    <div
+        class="container mx-auto max-w-[1140px] lg:flex relative lg:before:content-[''] lg:before:absolute lg:before:left-0 lg:before:top-0 lg:before:bottom-0 lg:before:w-[105px] lg:before:bg-[#4a7e5b]">
         <!-- card 1 -->
         <div class="flex p-[30px] bg-[#589167] relative ">
             <i class="fa-solid mr-5 text-[60px] text-white fa-house"></i>
@@ -116,23 +123,23 @@
                 </p>
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- service section -->
-    <section class="py-[100px]">
+    <section class="py-[102px]">
         <div class="container max-w-[1140px] mx-auto">
             <!-- heading text -->
             <div class="font-semibold text-center pb-5">
                 <h6 class="text-primary tracking-[2px] text-xs">SERVICES</h6>
-                <h1 class="text-heading  text-[40px]">How It Works</h1>
+                <h1 class="text-heading text-[28px] lg:text-[40px]">How It Works</h1>
             </div>
             <!-- cards -->
-            <div class="flex items-center">
+            <div class="block lg:flex items-center">
                 <!-- card1 -->
                 <div
                     class="group flex relative flex-col px-4 items-center justify-center text-white transition-colors duration-300">
                     <div
-                        class="w-[170px] h-[170px] mb-[10px] rounded-full bg-[#808080] group-hover:bg-primary flex items-center justify-center transition-colors duration-300 relative">
+                        class="w-[170px] h-[170px] mb-[10px] rounded-full bg-[#F5F4F0] group-hover:bg-primary flex items-center justify-center transition-colors duration-300 relative">
                         <i class="fa-solid mr-5 text-[60px] fa-house"></i>
                         <!-- Centered Absolute Div -->
                         <div
@@ -144,7 +151,8 @@
                         01</div>
                     <div class="text-center">
                         <h1 class="text-2xl mb-2 text-heading font-medium">Make Schedule</h1>
-                        <p class="text-lg text-[#808080]">A small river named Duden flows by their place and supplies it
+                        <p class="text-lg pb-4 text-[#808080]">A small river named Duden flows by their place and
+                            supplies it
                             with the necessary regelialia.</p>
                     </div>
                 </div>
@@ -152,7 +160,7 @@
                 <div
                     class="group flex relative flex-col px-4 items-center justify-center text-white transition-colors duration-300">
                     <div
-                        class="w-[170px] h-[170px] mb-[10px] rounded-full bg-[#808080] group-hover:bg-primary flex items-center justify-center transition-colors duration-300 relative">
+                        class="w-[170px] h-[170px] mb-[10px] rounded-full bg-[#F5F4F0] group-hover:bg-primary flex items-center justify-center transition-colors duration-300 relative">
                         <i class="fa-solid mr-5 text-[60px] fa-house"></i>
                         <!-- Centered Absolute Div -->
                         <div
@@ -164,7 +172,8 @@
                         02</div>
                     <div class="text-center">
                         <h1 class="text-2xl mb-2 text-heading font-medium">Make Schedule</h1>
-                        <p class="text-lg text-[#808080]">A small river named Duden flows by their place and supplies it
+                        <p class="text-lg pb-4 text-[#808080]">A small river named Duden flows by their place and
+                            supplies it
                             with the necessary regelialia.</p>
                     </div>
                 </div>
@@ -172,7 +181,7 @@
                 <div
                     class="group flex relative flex-col px-4 items-center justify-center text-white transition-colors duration-300">
                     <div
-                        class="w-[170px] h-[170px] mb-[10px] rounded-full bg-[#808080] group-hover:bg-primary flex items-center justify-center transition-colors duration-300 relative">
+                        class="w-[170px] h-[170px] mb-[10px] rounded-full bg-[#F5F4F0] group-hover:bg-primary flex items-center justify-center transition-colors duration-300 relative">
                         <i class="fa-solid mr-5 text-[60px] fa-house"></i>
                         <!-- Centered Absolute Div -->
                         <div
@@ -184,7 +193,8 @@
                         03</div>
                     <div class="text-center">
                         <h1 class="text-2xl mb-2 text-heading font-medium">Make Schedule</h1>
-                        <p class="text-lg text-[#808080]">A small river named Duden flows by their place and supplies it
+                        <p class="text-lg pb-4 text-[#808080]">A small river named Duden flows by their place and
+                            supplies it
                             with the necessary regelialia.</p>
                     </div>
                 </div>
@@ -193,31 +203,84 @@
     </section>
 
     <!-- 3rd section -->
-    <section class="container max-w-[1140px] mx-auto">
+    <section class="lg:container max-w-[1140px] mx-auto">
         <div class="flex flex-col lg:flex-row">
             <!-- left img -->
-            <div class="w-1/2">
+            <div class="hidden lg:block w-1/2">
                 <img src="img/about-1.jpg.webp" alt="">
             </div>
             <!-- right text content -->
-            <div class="w-1/2 bg-[#f5f4f0] p-12">
+            <div class="w-full lg:w-1/2 bg-[#f5f4f0] py-12 px-4 lg:p-12">
                 <h6 class="text-primary uppercase tracking-[2px] text-xs font-semibold">Welcome to Counselor</h6>
                 <h1 class="text-[40px] mb-6 font-semibold text-heading">Best Counseling Funding Network Worldwide.</h1>
-                <p class="text-base leading-7 text-[#808080] pb-4">A small river named Duden flows by their place and supplies it
+                <p class="text-base leading-7 text-[#808080] pb-4">A small river named Duden flows by their place and
+                    supplies it
                     with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences
                     fly into your mouth.</p>
-                <p class="text-base leading-7 text-[#808080] pb-4">On her way she met a copy. The copy warned the Little Blind
+                <p class="text-base leading-7 text-[#808080] pb-4">On her way she met a copy. The copy warned the Little
+                    Blind
                     Text, that where it came from it would have been rewritten a thousand times and everything that was
                     left from its origin would be the word "and" and the Little Blind Text should turn around and return
                     to its own, safe country.</p>
                 <button class="flex gap-[10px] mt-6 text-sm">
-                    <div class="border w-10 h-[30px] rounded-md border-primary text-primary flex items-center justify-center">
+                    <div
+                        class="border w-10 h-[30px] rounded-md border-primary text-primary flex items-center justify-center">
                         <i class="fa-solid fa-play "></i>
                     </div>
                     Watch Our Consultant Video
                 </button>
             </div>
         </div>
+    </section>
+
+    <!-- our service -->
+    <section class="container max-w-[1140px] mx-auto py-[102px]">
+        <!-- heading section -->
+        <div class="text-center mb-12">
+            <h6 class="text-primary uppercase tracking-[2px] text-xs font-semibold">Our Services</h6>
+            <h1 class="mb-3 text-[40px] font-semibold text-heading">We Can Help You With This Situation</h1>
+        </div>
+        <!-- situation section -->
+        <div class="lg:flex">
+            <!-- link section -->
+             <div class="w-full lg:w-[33%] px-[15px] flex flex-col gap-[10px]">
+                <!-- 1st -->
+                <div class="bg-primary text-white border border-primary rounded-[3px] py-6 px-4">
+                    <h3 class="font-semibold text-xl">Relation Problem</h3>
+                </div>
+                <!-- 2nd -->
+                <div class="border rounded-[3px] py-6 px-4">
+                    <h3 class="font-semibold text-xl">Cuples Counseling</h3>
+                </div>
+                <!-- 3rd -->
+                <div class="border rounded-[3px] py-6 px-4">
+                    <h3 class="font-semibold text-xl">Depression Treatment</h3>
+                </div>
+                <!-- 4th -->
+                <div class="border rounded-[3px] py-6 px-4">
+                    <h3 class="font-semibold text-xl">Family Problem</h3>
+                </div>
+                <!-- 5th -->
+                <div class="border rounded-[3px] py-6 px-4">
+                    <h3 class="font-semibold text-xl">Personal Problem</h3>
+                </div>
+                <!-- 6th -->
+                <div class="border rounded-[3px] py-6 px-4">
+                    <h3 class="font-semibold text-xl">Bussiness Problem</h3>
+                </div>
+             </div>
+             <!-- post section -->
+             <div class="w-full mt-2 lg:mt-0 lg:w-[65%] px-[15px] ">
+                <div class="mb-5 h-[400px] w-full">
+                    <img src="img/services-1.jpg.webp" class="h-full object-cover w-full" alt="">
+                </div>
+                <h3 class="font-bold text-[28px] mb-2">Relation Problem</h3>
+                <p class="text-[#808080] mb-4 leading-[1.8rem]">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+             </div>
+        </div>
+
+        <!-- happy client section -->
+
     </section>
     <section class="h-screen bg-slate-300"></section>
 
