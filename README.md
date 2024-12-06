@@ -7,7 +7,7 @@ A brief description of what this project does and who it's for
 
 ## PDF of website
 
-pdf:
+site : https://counserlor.vercel.app/
 ## Installation
 
 This is a simple website created using HTML and CSS. Follow the instructions below to clone, install, and run the project.
