@@ -47,27 +47,31 @@
     </header>
 
     <!-- navbar -->
-    <nav
-        class="flex bg-black text-white lg:text-black lg:bg-white container mx-auto max-w-[1140px] py-4 items-center justify-between">
-        <!-- Logo -->
-        <h3 class="font-bold text-[20px]">Counselor</h3>
+    <nav class=" sticky top-0 z-50 bg-black text-white lg:text-black lg:bg-white ">
+        <div class="flex container mx-auto max-w-[1140px] py-4 items-center justify-between">
 
-        <!-- Links (Desktop) -->
-        <ul class="hidden lg:flex items-center text-[15px]">
-            <li class="px-5 font-semibold py-[14px]"><a href="#">Home</a></li>
-            <li class="px-5 font-semibold py-[14px]"><a href="#">About</a></li>
-            <li class="px-5 font-semibold py-[14px]"><a href="#">Counselor</a></li>
-            <li class="px-5 font-semibold py-[14px]"><a href="#">Services</a></li>
-            <li class="px-5 font-semibold py-[14px]"><a href="#">Pricing</a></li>
-            <li class="px-5 font-semibold py-[14px]"><a href="#">Blog</a></li>
-            <li class="px-5 font-semibold py-[14px]"><a href="#">Contact</a></li>
-        </ul>
 
-        <!-- Mobile Menu Toggle -->
-        <button id="menuToggle" class="lg:hidden text-[#FFFFFF80] text-base focus:outline-none">
-            Menu
-        </button>
+            <!-- Logo -->
+            <h3 class="font-bold text-[20px]">Counselor</h3>
+
+            <!-- Links (Desktop) -->
+            <ul class="hidden lg:flex items-center text-[15px]">
+                <li class="px-5 font-semibold py-[14px]"><a href="#">Home</a></li>
+                <li class="px-5 font-semibold py-[14px]"><a href="#">About</a></li>
+                <li class="px-5 font-semibold py-[14px]"><a href="#">Counselor</a></li>
+                <li class="px-5 font-semibold py-[14px]"><a href="#">Services</a></li>
+                <li class="px-5 font-semibold py-[14px]"><a href="#">Pricing</a></li>
+                <li class="px-5 font-semibold py-[14px]"><a href="#">Blog</a></li>
+                <li class="px-5 font-semibold py-[14px]"><a href="#">Contact</a></li>
+            </ul>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="menuToggle" class="lg:hidden text-[#FFFFFF80] text-base focus:outline-none">
+                Menu
+            </button>
+        </div>
     </nav>
+
 
     <!-- Mobile Menu -->
     <div id="mobileMenu"
@@ -104,48 +108,62 @@
                     </div>
                 </div>
                 <!-- right side  -->
+
                 <div class="w-full lg:w-1/2 flex lg:justify-end">
-                    <span class="h-20 w-20 rounded-full bg-white text-primary flex items-center justify-center"><i
-                            class="fa-solid fa-play text-2xl"></i></span>
+                    <span class="relative flex items-center justify-center h-20 w-20">
+                        <!-- Ping Animation -->
+                        <span class="absolute h-20 w-20 rounded-full bg-[#01d28e66] animate-custom-ping opacity-75"></span>
+
+                        <!-- Play Button -->
+                        <span
+                            class="relative h-20 w-20 rounded-full bg-white text-primary flex items-center justify-center">
+                            <i class="fa-solid fa-play text-2xl"></i>
+                        </span>
+                    </span>
                 </div>
+
+
         </section>
-        <!-- card section -->
+
         <div class="relative">
             <div
-              class="container lg:absolute bottom-[-150px] mx-auto max-w-[1140px] lg:flex lg:before:content-[''] lg:before:absolute lg:before:left-0 lg:before:top-0 lg:before:bottom-0 lg:before:w-[105px] lg:before:bg-[#4a7e5b]">
-              <!-- Card 1 -->
-              <div class="flex p-[30px] flex-col md:flex-row gap-5 lg:gap-0 bg-[#589167] relative">
-                <img class="h-16 w-16 mr-5 filter invert brightness-100 mt-5" src="img/icon/document (3).png" alt="">
-                <div>
-                  <h3 class="text-2xl font-medium mb-2 text-white">100% Confidential</h3>
-                  <p class="text-[17px] text-whiteText">
-                    A small river named Duden flows by their place and supplies it with the necessary regelialia.
-                  </p>
+                class="container relative mx-auto max-w-[1140px] lg:flex lg:before:content-[''] lg:before:absolute lg:before:left-[-105px] lg:before:top-0 lg:before:bottom-0 lg:before:w-[105px] lg:before:bg-[#4a7e5b] lg:before:z-[11]">
+                <!-- Card 1 -->
+                <div class="relative flex p-8 flex-col md:flex-row gap-5 lg:gap-0 bg-[#589167]">
+                    <img class="h-16 w-16 mr-5 filter invert brightness-100 mt-5" src="img/icon/document (3).png"
+                        alt="">
+                    <div>
+                        <h3 class="text-2xl font-medium mb-2 text-white">100% Confidential</h3>
+                        <p class="text-[17px] text-whiteText">
+                            A small river named Duden flows by their place and supplies it with the necessary
+                            regelialia.
+                        </p>
+                    </div>
                 </div>
-              </div>
-              <!-- Card 2 -->
-              <div class="flex p-[30px] flex-col md:flex-row gap-5 lg:gap-0 bg-[#528760]">
-                <img class="h-16 w-16 mr-5 filter invert brightness-100 mt-5" src="img/icon/employee.png" alt="">
-                <div>
-                  <h3 class="text-2xl font-medium mb-2 text-white">Qualified Team</h3>
-                  <p class="text-[17px] text-whiteText">
-                    A small river named Duden flows by their place and supplies it with the necessary regelialia.
-                  </p>
+                <!-- Card 2 -->
+                <div class="relative flex p-8 flex-col md:flex-row gap-5 lg:gap-0 bg-[#528760]">
+                    <img class="h-16 w-16 mr-5 filter invert brightness-100 mt-5" src="img/icon/employee.png" alt="">
+                    <div>
+                        <h3 class="text-2xl font-medium mb-2 text-white">Qualified Team</h3>
+                        <p class="text-[17px] text-whiteText">
+                            A small river named Duden flows by their place and supplies it with the necessary
+                            regelialia.
+                        </p>
+                    </div>
                 </div>
-              </div>
-              <!-- Card 3 -->
-              <div class="flex flex-col md:flex-row gap-5 lg:gap-0 bg-[#4e815c] p-[30px]">
-                <img class="h-16 w-16 mr-5 filter invert brightness-100 mt-5" src="img/icon/umbrella.png" alt="">
-                <div>
-                  <h3 class="text-2xl font-medium mb-2 text-white">Individual Approach</h3>
-                  <p class="text-[17px] text-whiteText">
-                    A small river named Duden flows by their place and supplies it with the necessary regelialia.
-                  </p>
+                <!-- Card 3 -->
+                <div class="relative flex p-8 flex-col md:flex-row gap-5 lg:gap-0 bg-[#4e815c]">
+                    <img class="h-16 w-16 mr-5 filter invert brightness-100 mt-5" src="img/icon/umbrella.png" alt="">
+                    <div>
+                        <h3 class="text-2xl font-medium mb-2 text-white">Individual Approach</h3>
+                        <p class="text-[17px] text-whiteText">
+                            A small river named Duden flows by their place and supplies it with the necessary
+                            regelialia.
+                        </p>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
-          
+        </div>
     </main>
 
 
@@ -160,18 +178,19 @@
             <!-- cards -->
             <div class="service__cards block lg:flex items-center">
                 <!-- card1 -->
+                 
                 <div
                     class="group flex lg:px-4 relative flex-col items-center justify-center text-white transition-colors duration-300">
                     <div
-                        class="w-[170px] h-[170px] mb-[10px] rounded-full bg-[#F5F4F0] group-hover:bg-primary  flex items-center justify-center transition-colors duration-300 relative">
+                        class="w-[170px] h-[170px] mb-[10px] rounded-full bg-[#F5F4F0] group-hover:bg-primary  flex items-center justify-center transition-colors duration-300 z-[1] relative">
                         <img class="h-[70px] w-[70px] mr-5 " src="img/icon/qa.png" alt="">
                         <!-- Centered Absolute Div -->
                         <div
-                            class="absolute top-1/2 opacity-90 group-hover:opacity-1 left-[65%] group-hover:left-[60%] group-hover:bg-white transform -translate-x-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-primary transition-all duration-300">
+                            class="absolute top-1/2 -z-10 group-hover:opacity-1 left-[65%] group-hover:left-[60%] group-hover:bg-white transform -translate-x-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-primary transition-all duration-300">
                         </div>
                     </div>
                     <div
-                        class="absolute bg-primary group-hover:bg-white group-hover:text-primary  top-0 right-[30%] border-[5px] border-white text-white w-[50px] h-[50px] rounded-full flex items-center justify-center transition-colors duration-300 text-lg font-medium">
+                        class="absolute bg-primary group-hover:bg-white group-hover:text-primary  top-0 right-[30%] border-[5px] border-white text-white w-[50px] h-[50px] z-10 rounded-full flex items-center justify-center transition-colors duration-300 text-lg font-medium">
                         01</div>
                     <div class="text-center">
                         <h1 class="text-2xl mb-2 text-heading font-medium">Make Schedule</h1>
@@ -184,15 +203,15 @@
                 <div
                     class="group flex lg:px-4 relative flex-col items-center justify-center text-white transition-colors duration-300">
                     <div
-                        class="w-[170px] h-[170px] mb-[10px] rounded-full bg-[#F5F4F0] group-hover:bg-primary  flex items-center justify-center transition-colors duration-300 relative">
+                        class="w-[170px] h-[170px] mb-[10px] rounded-full bg-[#F5F4F0] group-hover:bg-primary  flex items-center justify-center transition-colors duration-300 -z-[1] relative">
                         <img class="h-[70px] w-[70px] mr-5" src="img/icon/calendar.png" alt="">
                         <!-- Centered Absolute Div -->
                         <div
-                            class="absolute top-1/2 opacity-90 group-hover:opacity-1 left-[65%] group-hover:left-[60%] group-hover:bg-white transform -translate-x-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-primary transition-all duration-300">
+                            class="absolute top-1/2 group-hover:opacity-1 left-[65%] group-hover:left-[60%] group-hover:bg-white transform -translate-x-1/2 -translate-y-1/2 z-[-1] h-10 w-10 rounded-full bg-primary transition-all duration-300">
                         </div>
                     </div>
                     <div
-                        class="absolute bg-primary group-hover:bg-white group-hover:text-primary  top-0 right-[30%] border-[5px] border-white text-white w-[50px] h-[50px] rounded-full flex items-center justify-center transition-colors duration-300 text-lg font-medium">
+                        class="absolute bg-primary group-hover:bg-white group-hover:text-primary top-0 right-[30%] border-[5px] border-white text-white w-[50px] h-[50px] rounded-full z-10 flex items-center justify-center transition-colors duration-300 text-lg font-medium">
                         02</div>
                     <div class="text-center">
                         <h1 class="text-2xl mb-2 text-heading font-medium">Make Schedule</h1>
@@ -205,15 +224,16 @@
                 <div
                     class="group flex lg:px-4 relative flex-col items-center justify-center text-white transition-colors duration-300">
                     <div
-                        class="w-[170px] h-[170px] mb-[10px] rounded-full bg-[#F5F4F0] group-hover:bg-primary  flex items-center justify-center transition-colors duration-300 relative">
+                        class="w-[170px] h-[170px] mb-[10px] rounded-full bg-[#F5F4F0] group-hover:bg-primary  flex items-center justify-center transition-colors duration-300 z-[1] relative">
                         <img class="h-[70px] w-h-[70px] mr-5" src="img/icon/document (3).png" alt="">
                         <!-- Centered Absolute Div -->
                         <div
-                            class="absolute top-1/2 opacity-90 group-hover:opacity-1 left-[65%] group-hover:left-[60%] group-hover:bg-white transform -translate-x-1/2 -translate-y-1/2 h-10 w-10 rounded-full bg-primary transition-all duration-300">
+                            class="absolute top-1/2 
+                            group-hover:opacity-1 left-[65%] group-hover:left-[60%] group-hover:bg-white transform -translate-x-1/2 -translate-y-1/2 z-[-1] h-10 w-10 rounded-full bg-primary transition-all duration-300">
                         </div>
                     </div>
                     <div
-                        class="absolute bg-primary group-hover:bg-white group-hover:text-primary  top-0 right-[30%] border-[5px] border-white text-white w-[50px] h-[50px] rounded-full flex items-center justify-center transition-colors duration-300 text-lg font-medium">
+                        class="absolute bg-primary group-hover:bg-white group-hover:text-primary  top-0 right-[30%] border-[5px] border-white text-white w-[50px] h-[50px] rounded-full flex items-center justify-center transition-colors duration-300 text-lg font-medium z-10">
                         03</div>
                     <div class="text-center">
                         <h1 class="text-2xl mb-2 text-heading font-medium">Make Schedule</h1>
@@ -247,13 +267,22 @@
                     Text, that where it came from it would have been rewritten a thousand times and everything that was
                     left from its origin would be the word "and" and the Little Blind Text should turn around and return
                     to its own, safe country.</p>
-                <button class="flex gap-[10px] mt-5 text-sm">
-                    <div
-                        class="border w-10 h-[30px] rounded-md border-primary text-primary flex items-center justify-center">
-                        <i class="fa-solid fa-play "></i>
-                    </div>
+                <button class="flex gap-[10px] mt-5 text-sm items-center uppercase">
+
+
+                    <span class="relative flex items-center justify-center ">
+                        <!-- Ping Animation -->
+                        <span class="absolute h-[30px] w-9 rounded-md bg-[#01d28e66] animate-custom-ping2 opacity-100"></span>
+
+                        <!-- Play Button -->
+                        <span
+                            class="relative w-10 h-[30px] rounded-md bg-[#f5f4f0] border border-primary text-primary flex items-center justify-center">
+                            <i class="fa-solid fa-play relative z-10"></i>
+                        </span>
+                    </span>
                     Watch Our Consultant Video
                 </button>
+
             </div>
         </div>
     </section>
@@ -419,9 +448,10 @@
             <div class="package__cards grid grid-cols-1 md:grid-cols-3 gap-[30px]">
                 <div class="bg-white rounded-lg shadow-md text-center p-[30px]">
                     <div class="text-center mb-6">
-                        <h3 class=""><sup class="text-2xl text-[#B3B3B3]">$</sup> <span
-                                class="text-[60px] font-bold text-primary">49</span> <sub
-                                class="text-xs text-[#808080]">/mo</sub>
+                        <h3 class="">
+                            <span class="text-[60px] font-bold text-primary relative">
+                                <sup class="text-2xl absolute left-[-20px] font-normal top-1 text-[#B3B3B3]">$</sup>49<sub
+                                class="text-xs text-[#808080] font-normal">/mo</sub>
                         </h3>
                         <p class="text-lg mb-5 font-bold pb-[10px] border-b border-[#0000001a] text-black">For Business
                         </p>
@@ -440,9 +470,11 @@
 
                 <div class="bg-white rounded-lg shadow-md text-center p-[30px]">
                     <div class="text-center mb-6">
-                        <h3 class=""><sup class="text-2xl text-[#B3B3B3]">$</sup> <span
-                                class="text-[60px] font-bold text-primary">79</span> <sub
-                                class="text-xs text-[#808080]">/mo</sub>
+                        <h3 class="">
+                             <span class="text-[60px] font-bold text-primary relative">
+                                <sup class="text-2xl absolute left-[-20px] font-normal top-1 text-[#B3B3B3]">$</sup>79<sub
+                                class="text-xs text-[#808080] font-normal">/mo</sub>
+                            </span>
                         </h3>
                         <p class="text-lg mb-5 font-bold pb-[10px] border-b border-[#0000001a] text-black">For Adults
                         </p>
@@ -461,9 +493,10 @@
 
                 <div class="bg-white rounded-lg shadow-md text-center p-[30px]">
                     <div class="text-center mb-6">
-                        <h3 class=""><sup class="text-2xl text-[#B3B3B3]">$</sup> <span
-                                class="text-[60px] font-bold text-primary">10</span> <sub
-                                class="text-xs text-[#808080]">/mo</sub>
+                        <h3 class="">
+                            <span class="text-[60px] font-bold text-primary relative">
+                                <sup class="text-2xl absolute left-[-20px] font-normal top-1 text-[#B3B3B3]">$</sup>19<sub
+                                class="text-xs text-[#808080] font-normal">/mo</sub>
                         </h3>
                         <p class="text-lg mb-5 font-bold pb-[10px] border-b border-[#0000001a] text-black">For Children
                         </p>
@@ -505,14 +538,23 @@
                         class="text-sm font-semibold placeholder:text-[#000000cc] px-3 py-[6px] h-[52px] w-full rounded-lg"
                         placeholder="Email">
                 </div>
-                <select
-                    class="text-sm font-semibold placeholder:text-[#000000cc] mb-4 px-3 py-[6px] h-[52px] w-full rounded-lg"
-                    name="" id="">
-                    <option value="">Services</option>
-                    <option value="">Relation Problem</option>
-                    <option value="">Bussiness Problem</option>
-                    <option value="">Depration Problem</option>
-                </select>
+                <div class="relative">
+                    <select
+                        class="text-sm font-semibold placeholder:text-[#000000cc] mb-4 px-3 py-[6px] h-[52px] w-full rounded-lg pr-8 appearance-none"
+                        name="" id="">
+                        <option value="">Services</option>
+                        <option value="">Relation Problem</option>
+                        <option value="">Business Problem</option>
+                        <option value="">Deprivation Problem</option>
+                    </select>
+                
+                    <!-- Custom Icon inside the select container -->
+                    <i class="fa-solid fa-chevron-down absolute right-3 top-1/2 transform -translate-y-full text-[#000000cc]"></i>
+                </div>
+                
+                
+                
+                
                 <textarea rows="12"
                     class="text-sm font-semibold h-36 placeholder:text-[#000000cc] px-3 py-[6px] w-full rounded-lg"
                     name="" placeholder="Message" id=""></textarea>

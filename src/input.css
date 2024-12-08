@@ -2,17 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Swiper pagination bullet styles */
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  @apply bg-[#E5E5E5] h-[10px] w-[10px] rounded-full relative opacity-100 transition-transform duration-300 ease-in-out;
+}
 
-@layer utilities {
-    /* Base style for pagination bullets */
-    .swiper-pagination-bullet {
-      @apply w-4 h-4 border border-gray-400 bg-gray-300 rounded-full transition-all duration-300 ease-in-out;
-    }
-  
-    /* Active pagination bullet */
-    .swiper-pagination-bullet-active {
-      @apply bg-pink-500 border-gray-500;
-    }
-  }
-  
-  
+.swiper-pagination-bullet::after {
+  @apply absolute top-[-2px] left-[-2px] w-[14px] h-[14px] border border-[#e6e6e6] rounded-full;
+  content: '';
+  transition: all 0.3s ease-in-out;
+}
+
+/* Active bullet styles */
+.swiper-pagination-bullet-active {
+  @apply bg-primary ;
+}
+
+.swiper-pagination-bullet-active::after {
+  @apply bg-primary;
+}

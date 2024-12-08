@@ -10,6 +10,23 @@ module.exports = {
       },
     },
     extend: {
+      animation: {
+        'custom-ping': 'customPing 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'custom-ping2': 'customPing2 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+      },
+      keyframes: {
+        customPing: {
+          '0%': { transform: 'scale(1)', opacity: '1' },
+          '75%': { transform: 'scale(2)', opacity: '0' },
+          '100%': { transform: 'scale(2)', opacity: '0' },
+        },
+        customPing2: {
+          '0%': { transform: 'scale(1)', opacity: '1' },
+          '75%': { transform: 'scale(3)', opacity: '0' },
+          '100%': { transform: 'scale(2)', opacity: '0' },
+        },
+        
+      },
       fontFamily:{
         roboto: ["Roboto", "sans-serif"]
       },

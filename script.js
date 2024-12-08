@@ -9,7 +9,7 @@ const menuToggle = document.getElementById('menuToggle');
         mobileMenu.classList.add('translate-y-0');
       } else {
         mobileMenu.classList.add('-translate-y-full');
-        setTimeout(() => mobileMenu.classList.add('hidden'), 300); // Wait for animation
+        setTimeout(() => mobileMenu.classList.add('hidden'), 300); 
       }
     });
 
@@ -25,7 +25,7 @@ const swiper = new Swiper('.mySwiper', {
     },
 
     autoplay: {
-        delay: 300000, // Auto-slide every 3 seconds
+        delay: 3000, // Auto-slide every 3 seconds
         disableOnInteraction: false,
     },
 
